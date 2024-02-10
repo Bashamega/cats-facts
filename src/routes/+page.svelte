@@ -4,7 +4,7 @@
 		fetch('https://catfact.ninja/fact')
 		.then(res=>res.json())
 		.then(data=>{
-			fact = data.fact;
+			fact = data.fact.toLowerCase();
 		})
 	}
 	generate()
